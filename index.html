@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Typo Resolver</title>
-    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+    <meta name="description" content="讓我們幫你改掉錯字"/>
 
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
@@ -16,15 +16,24 @@
 
     <link rel="shortcut icon" href="img/typo.png">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="dist/js/vendor/html5shiv.js"></script>
-      <script src="dist/js/vendor/respond.min.js"></script>
-    <![endif]-->
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-
-    <!--  <h3 class="demo-panel-title">Navbar</h3> -->
+      <div id="fb-root"></div>
+      <script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <script>
+          function myfun(){
+              
+          }
+        </script>
+     
       <div class="row demo-row">
           <div class="col-xs-12">
               <nav class="navbar navbar-inverse navbar-embossed" role="navigation" style="position: fixed; z-index:1000;">
@@ -36,19 +45,7 @@
                   </div>
                   <div class="collapse navbar-collapse" id="navbar-collapse-01">
                       <ul class="nav navbar-nav navbar-left">
-                        <!--  <li><a href="#fakelink">WHAT<span class="navbar-unread">1</span></a></li>-->
-<!--                          <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
-                              <span class="dropdown-arrow"></span>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#">Action</a></li>
-                                  <li><a href="#">Another action</a></li>
-                                  <li><a href="#">Something else here</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
-                              </ul>
-                          </li>
-    -->
+
                           <li><a href="#WHAT">WHAT</a></li>
                           <li><a href="#HOW">HOW</a></li>                          
                           <li><a href="#ASK">ASK</a></li>
@@ -78,23 +75,7 @@
                   Typo Resolver
                   <small>幫 你 改 錯 字</small>
               </h1>
-              <!--
-                <h3 class="demo-panel-title">Buttons</h3>
-            
-              <div class="row demo-row">
-                  <div class="col-xs-3">
-                      <a href="#fakelink" class="btn btn-block btn-lg btn-primary">WHAT</a>
-                  </div>
-                  <div class="col-xs-3">
-                      <a href="#fakelink" class="btn btn-block btn-lg btn-warning">HOW</a>
-                  </div>
-                  <div class="col-xs-3">
-                      <a href="#fakelink" class="btn btn-block btn-lg btn-default">WHO</a>
-                  </div>
-                  <div class="col-xs-3">
-                      <a href="#fakelink" class="btn btn-block btn-lg btn-danger">SHARE & ASK</a>
-                  </div>
-              </div> <!-- /row -->
+
           </div> <!-- /demo-headline -->
       <div class="text-on-mid">
           <div >
@@ -143,20 +124,6 @@
              
               <span class="anchor" id="ASK"></span>
               <h1 class="demo-section-title">Ask</h1>
-              <!--div class="row demo-row">
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-lg btn-success">Success Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-lg btn-inverse">Inverse Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-lg btn-info">Info Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-lg btn-default disabled">Disabled Button</a>
-          </div>
-        </!--div> <!-- /row -->
 
 
               <div class="row">
@@ -197,29 +164,12 @@
                                   <label class="share-label" for="share-toggle2">Facebook</label>
                                   <input type="checkbox" data-toggle="switch" />
                               </li>
-                              <li>
-                                  <label class="share-label" for="share-toggle4">Twitter</label>
-                                  <input type="checkbox" checked="" data-toggle="switch" />
-                              </li>
-                              <li>
-                                  <label class="share-label" for="share-toggle4">Instagram</label>
-                                  <input type="checkbox"  data-toggle="switch" />
-                              </li>
-                              <li>
-                                  <label class="share-label" for="share-toggle4">Googl+</label>
-                                  <input type="checkbox" checked="" data-toggle="switch" />
-                              </li>
-                              <li>
-                                  <label class="share-label" for="share-toggle4">LINE</label>
-                                  <input type="checkbox"  data-toggle="switch" />
-                              </li>
-                              <li>
-                                  <label class="share-label" for="share-toggle6">Pinterest</label>
-                                  <input type="checkbox" checked="" data-toggle="switch" />
-                              </li>
                           </ul>
-                          <a href="#" class="btn btn-primary btn-block btn-large">Share</a>
-                      </div> <!-- /share -->
+                          <button class="btn btn-primary btn-block btn-large">
+                              <div id="test" class="fb-share-button" data-href="http://quenlo.github.io/TypoResolver/" data-layout="button_count"></div>
+                          </button>
+
+</div> <!-- /share -->
                   </div><!-- /.col-xs-3 -->
               </div> <!-- /.row -->
           </div>
